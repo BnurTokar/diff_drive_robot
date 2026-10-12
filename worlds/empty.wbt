@@ -7,8 +7,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.05833659016157855 0.9879624344154743 -0.1432727134948237 0.7817949021838877
-  position -0.8113529475044199 -0.02281572431063017 0.8224754621586843
+  orientation -0.23817666623658354 0.2497695992001307 0.9385558177198804 1.5866942834725062
+  position 0.12332406903122643 -0.6061809508302156 0.29643329671177177
 }
 TexturedBackground {
 }
@@ -45,9 +45,12 @@ Robot {
         RotationalMotor {
           name "motor_1"
         }
+        PositionSensor {
+          name "ps_1"
+        }
       ]
       endPoint Solid {
-        translation 0.045 -1.4770808948176003e-18 0.024999999999999998
+        translation 0.045 -1.4770762495875797e-18 0.024999999999999998
         rotation 0.6773828687498692 0.288158119596803 0.6768436652836695 2.580053578397203
         children [
           DEF Wheel Shape {
@@ -77,9 +80,12 @@ Robot {
         RotationalMotor {
           name "motor_2"
         }
+        PositionSensor {
+          name "ps_2"
+        }
       ]
       endPoint Solid {
-        translation -0.045 -1.4770807437009443e-18 0.024999999999999998
+        translation -0.045 -1.477076098459321e-18 0.024999999999999998
         rotation 0.6773828744062365 0.28815809302474077 0.6768436709355343 2.5800536274999137
         children [
           USE Wheel
@@ -116,5 +122,5 @@ Robot {
   boundingObject USE Body
   physics Physics {
   }
-  controller "drive_my_robot"
+  controller "odometer_calculation"
 }
