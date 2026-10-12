@@ -13,11 +13,14 @@ Thumbs.db
 # Webots local workspace state and generated world thumbnails
 *.wbproj
 
+
 # Compiled artifacts
+*.o
 *.obj
 *.exe
 *.dll
 *.so
 *.dylib
 
+# Logs
 *.log
